@@ -32,3 +32,13 @@ class sflowtool {
 	}
   }
 }
+
+class sflow2graphite {
+	
+	file { '/opt/graphite/bin/sflow2graphite.pl':
+	ensure => file,
+	source => 'puppet:///modules/sflowtool/sflow2graphite.pl',
+	owner => root,
+	group => root,
+	}
+}
