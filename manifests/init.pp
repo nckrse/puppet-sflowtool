@@ -8,7 +8,7 @@ class sflowtool {
 			owner => root,
 			group => root,
 		}->
-		package { 'sflowtool-3.22_amd64':
+		package { 'sflowtool':
 			ensure => installed,
 			provider => dpkg,
 			source => '/tmp/sflowtool-3.22_amd64.deb',
@@ -21,7 +21,7 @@ class sflowtool {
 			owner => root,
 			group => root,
 		}->
-		package { 'sflowtool-3.22_x86_64':
+		package { 'sflowtool':
 			ensure => installed,
 			provider => rpm,
 			source => '/tmp/sflowtool-3.22_x86_64.rpm',
